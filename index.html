@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystal Collector</title>
+    <link rel="stylesheet" type="text/css" href="Assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="Assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="jumbotron">
+                <h1 class="display-4 text-center">Crystal Collector</h1>
+                <p class="lead text-center">Instructions</p>
+                <hr class="my-4">
+                <p id="instructions">In this game, you must reach the indicated value by selecting the appropriate gems with different values. However, the value of each gem is hidden and you'll have to learn how much each one is worth.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-12 text-center">
+                <button type="button" class="btn btn-success startGame" id="startGame">Start Game</button>
+                <hr class="my-4">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <p>Target Value: <span id="finalValue"></span></p>
+            <p>Current Total: <span id="currentValue">0</span></p>
+            <p>Games Won: <span id="gamesWon">0</span></p>
+            <p>Games Lost: <span id="gamesLost">0</span></p>            
+        </div>
+        <div class="col-md-8">
+            <img src="Assets/images/amethyst.png" id="crystal1" alt="Crystal 1" height="200px" width="200px">
+            <img src="Assets/images/emerald.jpg" id="crystal2" alt="Crystal 2" height="200px" width="200px">
+            <img src="Assets/images/aquamarine.jpg" id="crystal3" alt="Crystal 3" height="200px" width="200px">
+            <img src="Assets/images/sapphire.jpg" id="crystal4" alt="Crystal 4" height="200px" width="200px">
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="Assets/javascript/game.js"></script>
+</body>
+</html>
