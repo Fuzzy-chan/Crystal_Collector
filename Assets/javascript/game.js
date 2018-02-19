@@ -67,14 +67,14 @@ $("button").on("click", function(){
 
 
 function resolve(){
-if (currentValue === targetValue){
+if (currentValue === targetValue && targetValue !==0){
     wins++;
     $("#gamesWon").text(wins);
     resetGame();
     alert("You Win!")
 }
 
-else if (currentValue > targetValue){
+else if (currentValue > targetValue && targetValue !==0){
     losses++;
     $("#gamesLost").text(losses);
     resetGame();
